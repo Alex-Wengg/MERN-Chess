@@ -1,0 +1,8 @@
+1. Get Node and React to work together 
+- Need to look more examples at MERN
+- Do more research and planning
+
+2. work on the  ui and everything but with react as well
+-set app.js up so that express, react and mongodb will work
+
+add graphql and maybe typescript as well later
