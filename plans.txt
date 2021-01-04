@@ -6,3 +6,7 @@
 -set app.js up so that express, react and mongodb will work
 
 add graphql and maybe typescript as well later
+
+git add .
+git commit 'name'
+git push origin HEAD:main
