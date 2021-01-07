@@ -14,3 +14,14 @@ const apis = require("./api");
 app.use("/api", apis);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
+
+const mongoose = require('mongoose');
+
+
+// Connect to Mongo
+mongoose.connect(process.env.DB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+}).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err));
+
+app.listen(...)
