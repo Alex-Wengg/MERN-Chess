@@ -10,3 +10,7 @@ add graphql and maybe typescript as well later
 git add .
 git commit 'name'
 git push origin HEAD:main
+
+figure out the difference between local and online mongodb 
+
+read more, not exactly serve how to configure react and  node js
