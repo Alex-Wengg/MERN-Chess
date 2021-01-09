@@ -1,0 +1,133 @@
+[
+  {
+      "name":" rookR",
+      "x": 7,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":" horseR",
+      "x": 6,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":"bishopR",
+      "x": 5,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":"king",
+      "x": 4,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":"queen",
+      "x": 3,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":" bishopL",
+      "x": 2,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":"horseL",
+      "x": 1,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+
+  },
+  {
+      "name":"rookL",
+      "x": 0,
+      "y": 7,
+      "colour": "white",
+      "options":[]
+  },
+
+  
+    {
+      "name":" rookR",
+      "x": 7,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":" horseR",
+      "x": 6,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":"bishopR",
+      "x": 5,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":"king",
+      "x": 4,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":"queen",
+      "x": 3,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":" bishopL",
+      "x": 2,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":"horseL",
+      "x": 1,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+
+  },
+  {
+      "name":"rookL",
+      "x": 0,
+      "y": 0,
+      "colour": "black",
+      "options":[]
+  }
+
+
+  
+ ]

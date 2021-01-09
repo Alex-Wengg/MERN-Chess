@@ -14,7 +14,19 @@ console.log('oooiiii');
 
 
 
+const PieceSchema = new mongoose.Schema({
+    zip: String,
+    weather: [ String ], 
+    x: Number,
+    y: Number,
+    colour: String
+});
 const Piece = mongoose.model('piece',PieceSchema);
+
+
+
+
+
 
 var names = ['rookL','horseL','bishopL','king','queen','rookR','horseR','bishopR',
             'pawn0','pawn1','pawn2','pawn3','pawn4','pawn5','pawn6','pawn7',
@@ -45,3 +57,4 @@ for (var i=0; i < names.length; i++){
 }
 Piece.findOne({name: "rookR"}, function(err,obj) {console.log(obj)})
 module.exports = Piece;
+

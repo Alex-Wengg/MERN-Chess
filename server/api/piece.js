@@ -4,21 +4,24 @@ const axios = require("axios");
 require('dotenv').config({path: "./../../../.env"});
 const WEATHER = require("../models/Weather");
 
-const baseUrl = "http://api.openweathermap.org/data/2.5/weather";
+const baseUrl = "./piece.json";
 
 class Weather {
 
     /**
      * Gets the weather data based on the zipcode and which temp system to converge to (imperial/metric system)
-     * @param {number} zipCode The zipcode used to get the weather info from the weather api
-     * @param {string} tempMetric This is either "imperial" (use Fahrenheit) or "metric" (use Celsius)
-     * @return {JSON} The data response from the weather api call.
+     * @param {string} name piece name and which side of the piece
+     * @param {number} x col position
+     * @param {number} y row position
+     * @param {string} colour colour
+     * @param {[string]]} option available moves to choose
+     * @return {JSON} The data response from the chess api call.
      */
-    saveWeatherDataToMongo = async (zipCode, data) => {
-        const filter = {
-            zip: zipCode
-        }
 
+    saveWeatherDataToMongo = async (name, data) => {
+        const filter = {
+            Name: name
+        }
         const replace = {
             ...filter,
             ...data,
