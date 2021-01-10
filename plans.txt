@@ -14,3 +14,6 @@ git push origin HEAD:main
 figure out the difference between local and online mongodb 
 
 read more, not exactly serve how to configure react and  node js
+
+index.js configing, model/piece.js config
+and make local mongodb work as well
