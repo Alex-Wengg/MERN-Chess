@@ -3,11 +3,11 @@ const express = require('express');
 const router = express.Router();
 
 // Use the weather class we made in ./weather.js to call our method that will get the weather data from the api
-const Weather = require("./weather");
+const Piece = require("./piece");
 
 // GET Request - statically get the weather data from the weather api
-router.get("/weather",  async (req, res) => {
-    let weather = new Weather();
+router.get("/piece",  async (req, res) => {
+    let piece = new Piece();
     
     // Fixing the params of zipcode and tempMetric for an example GET request
     let weatherData = await weather.getWeatherData(98052, "us");
@@ -18,7 +18,7 @@ router.get("/weather",  async (req, res) => {
 });
 
 // POST Request - dynamically get the weather data based on request body
-router.post("/weather",  async (req, res) => {
+router.post("/piece",  async (req, res) => {
     const {zipCode, tempMetric} = req.body;
     let weather = new Weather();
     

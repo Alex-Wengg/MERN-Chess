@@ -2,11 +2,11 @@ const axios = require("axios");
 
 // Configuring the path to read the environment variable file, .env, to get the weather api key
 require('dotenv').config({path: "./../../../.env"});
-const WEATHER = require("../models/Weather");
+const PIECE = require("../models/piece");
 
 const baseUrl = "./piece.json";
 
-class Weather {
+class Piece {
 
     /**
      * Gets the weather data based on the zipcode and which temp system to converge to (imperial/metric system)
@@ -37,7 +37,7 @@ class Weather {
      * @return {JSON} The data response from the mongodb.
      */
     getWeatherDataFromMongo = async (zipCode) => {
-        return WEATHER.findOne({zip: zipCode});
+        return PIECE.findOne({zip: zipCode});
     }
 
     /**
@@ -47,7 +47,7 @@ class Weather {
      * @return {JSON} The data response from the mongodb.
      */
     async findOneReplace(filter, replace) {
-        await WEATHER.findOneAndReplace(filter, replace, {new: true, upsert: true});
+        await PIECE.findOneAndReplace(filter, replace, {new: true, upsert: true});
     }
 }
 
