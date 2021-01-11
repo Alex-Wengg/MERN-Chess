@@ -17,3 +17,5 @@ read more, not exactly serve how to configure react and  node js
 
 index.js configing, model/piece.js config
 and make local mongodb work as well
+
+man git fucking sucks
