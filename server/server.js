@@ -3,7 +3,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000;
+
+const mongoose = require('mongoose')
+const MongoClient = require('mongodb').MongoClient
+const url = 'mongodb://127.0.0.1:27017'
 
 // use body parser to get data from POST requests
 app.use(bodyParser.json());
@@ -15,13 +19,24 @@ app.use("/api", apis);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-const mongoose = require('mongoose');
 
+const dbName = 'piece'
+let db
 
-// Connect to Mongo
-mongoose.connect(process.env.DB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(() => console.log('MongoDB Connected...')).catch(err => console.log(err));
+MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+  if (err) return console.log(err)
+  // Storing a reference to the database so you can use it later
+  db = client.db(dbName)
+  console.log(`Connected MongoDB: ${url}`)
+  console.log(`Database: ${dbName}`)
+})
 
-app.listen(...)
+mongoose.connect(url, { useNewUrlParser: true })
+ db = mongoose.connection
+db.once('open', _ => {
+  console.log('Database connected:', url)
+})
+
+db.on('error', err => {
+  console.error('connection error:', err)
+})
