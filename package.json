@@ -17,8 +17,15 @@
   },
   "homepage": "https://github.com/Han-Weng/MERN-chess#readme",
   "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.3",
     "mongodb": "^3.6.3",
-    "mongoose": "^5.11.11"
+    "mongoose": "^5.11.11",
+    "node-sass": "^5.0.0",
+    "prop-types": "^15.7.2",
+    "react-bootstrap": "^1.4.3",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5"
   },
   "devDependencies": {
     "babel-preset-stage-0": "^6.24.1"
