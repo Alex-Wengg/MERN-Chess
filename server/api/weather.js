@@ -16,7 +16,7 @@ const key = "31a5c91a4848f5d20954d044f5815886"
          * @param {string} tempMetric This is either "imperial" (use Fahrenheit) or "metric" (use Celsius)
          * @return {JSON} The data response from the weather api call.
          */
-            async getWeatherData(ripCode, tempMetric) {
+            async getWeatherData(zipCode, tempMetric) {
 
             /**
              * Use get api for "By ZIP code" (https://openweathermap.org/current#zip)

@@ -21,3 +21,5 @@ and make local mongodb work as well
 man git fucking sucks
 
 i hope this fucking works
+
+all i need to do now is connect express mongodb wtih React
