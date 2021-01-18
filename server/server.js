@@ -7,8 +7,8 @@ const port = 5000;
 
 const mongoose = require('mongoose')
 const MongoClient = require('mongodb')
-const url = 'mongodb://localhost:27017/myproject'
-
+//const url = 'mongodb://localhost:27017/myproject'
+const url = 'mongodb+srv://Han:Mongodb123@cluster0.yst5i.mongodb.net/cluster0?retryWrites=true&w=majority'
 // use body parser to get data from POST requests
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
@@ -37,7 +37,7 @@ let db
 //   console.log('Database connected:', url)
 // })
 
-// db.on('error', err => {
+// db.on('error', err => { 
 //   console.error('connection error:', err)
 // })
 // Connect to Mongo
